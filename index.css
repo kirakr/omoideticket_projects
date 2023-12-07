@@ -1,0 +1,200 @@
+body{
+    margin: 0 auto;
+    background-color: #ffffff;
+    z-index: -1;
+    background-image: radial-gradient(#00d0ff 2px, #ffffff 2px);
+    background-size: 20px 20px;
+}
+
+.sample_area{
+    object-fit: contain;
+    width: 50%;
+    border-radius: 13px;
+}
+
+
+#concat{
+    background-color: #ababab;
+    border-radius: 13px;
+}
+
+.container{
+    max-width: 1400px;
+    background-color: #efefef;
+    margin: 0 auto;
+    position: relative;
+    padding: 30 40px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 13px;
+}
+
+.link_area{
+    background-color: rgb(97, 97, 255);
+    border-radius: 13px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 700px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 900;
+}
+
+p.subtxt{
+    font-size: 45px;
+    line-height: 60px;
+}
+
+
+p.qrcomment{
+    color: #ffffff;
+}
+
+
+
+
+#image1 {
+    display: none !important;
+   }
+#image2{
+     display: none;
+   }
+
+
+
+
+  /* ボタンのスタイル */
+  button {
+    padding: 0;
+    font-family: inherit;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
+    height: 64px;
+    padding: 8px 24px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    overflow-wrap: anywhere;
+    background-color: #ffffff;
+    border-radius: 13px; /* (buttonの高さ / 2) の値 */
+  }
+
+  button:hover{
+    background-color: #8a90ff;
+      transition: background-color 0.2s;
+    }
+  
+
+
+  .textbox-003 {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 13px;
+    background: #ffffff;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.textbox-003::placeholder {
+    color: #999;
+}
+
+.back_manu{
+    background-color: #ff0000;
+}
+
+p > .back_manu{
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.sample_box{
+    background-color: #ffffff;
+    border-radius: 13px;
+    padding: 20px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    width: 700px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    color: #4b5564;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #000;
+  }
+  
+  hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer {
+    padding: 2rem;
+    font-size: 15px;
+    color: #4b5564;
+    background: #f6f6f6;
+  }
+  
+  .footer__navi-heading {
+    font-weight: 600;
+  }
+  
+  .footer__logo {
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  
+  .footer__navi li {
+    margin-bottom: 0.75rem;
+  }
+  
+  @media (min-width: 768px) {
+    .md-flex {
+      display: flex;
+    }
+  
+    .md-justify-between {
+      justify-content: space-between;
+    }
+  
+    .grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }

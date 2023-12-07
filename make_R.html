@@ -1,0 +1,69 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>思い出きっぷ</title>
+  <link rel="stylesheet" href="index.css">
+  <!--フォント設定Googleのwebフォントを使用-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+  <div id="imgbase">
+    <div class="container">
+        <div class="sample_box">
+          <p class="subtxt">選択したデザイン</p>
+           <img src="imag/ticket-sample1.PNG" class="sample_area">
+        </div>      
+      <div class="layout_2">
+        <!-- チケット描写用canvas -->
+        <div class="ticket_content">
+          <canvas id="image1" width="740" height="500"></canvas>
+        </div>
+        <div class="ticket_content">
+          <p class="subtxt">思い出きっぷの作成方法</p>
+          <p class="ticket_content">①QRにしたいリンクを下のリンク貼り付けエリアに貼り付けてボタンを押します。<br>②きっぷ生成ボタンを押してデザインを確認します。<br>③保存ボタンを押して端末に画像を保存します。</p>
+            <div class="link_area">
+              <p class="qrcomment">リンク貼り付けエリア</p>
+              <!-- qr描写用canvas -->
+              <input id="isbn" type="text" class="textbox-003" name="isbn" value=""><button id="getqrInfo"class="btn btn-default">①このリンクで決定する</button>
+            </div>
+        </div>
+      </div>
+     <div id="qrOutput"><canvas id="image2" width="740" height="500"></canvas></div>
+     <!-- 合成結果用canvas -->
+     <canvas id="concat" width="740" height="500"></canvas>
+     <!-- 合成 -->
+     <p><button type="button" id="btn-concat">②きっぷを生成する</button></p>
+     <!-- 削除 -->
+     <!-- <p id="eraser"><button type="button" id="btn-eraser">取り消す</button></p> -->
+     <p><button id="savebtn">③保存する</button></p>
+     <a href="index.html#create"><p><button class="back_manu">デザイン選択に戻る</button></p></a>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="md-flex md-justify-between">
+      <a href="index.html" class="footer__logo">
+        <img src="imag/footer.PNG"  height="120">
+      </a>
+      <ul class="footer__navi flex">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="index.html#area_profile">運営者情報</a></li>
+        <li><a href="index.html#create">切符を作る</a></li>
+        <li><a href="index.html#area_question">お問合せ</a></li>
+      </ul>
+    </div>
+    <hr />
+    <p class="copyright">
+      © 2023 <a href="index.html">omoideticket.</a> All Rights Reserved.</p>
+  </footer>
+</body>
+<!--javascript読み取り-->
+<script src="js/index1.js" defer></script>
+<!-- ライブラリ読み込み -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.js"></script>
+
+</html>
